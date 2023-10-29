@@ -1,0 +1,21 @@
+nkgwu8@nakagawatakeshiyanoMacBook-Pro test % mkdir git_challenge
+nkgwu8@nakagawatakeshiyanoMacBook-Pro test % cd git_challenge
+
+
+nkgwu8@nakagawatakeshiyanoMacBook-Pro git_challenge % echo Hell,world! > hello_world.txt
+nkgwu8@nakagawatakeshiyanoMacBook-Pro git_challenge % git add hello_world.txt
+nkgwu8@nakagawatakeshiyanoMacBook-Pro git_challenge % git commit -m "hello_world.txtを追加"
+[main (root-commit) 1f4ca04] hello_world.txtを追加
+ 1 file changed, 1 insertion(+)
+ create mode 100644 hello_world.txt
+nkgwu8@nakagawatakeshiyanoMacBook-Pro git_challenge % echo こんにちは、世界！ > hello_world.txt
+nkgwu8@nakagawatakeshiyanoMacBook-Pro git_challenge % git checkout -- hello_world.txt
+nkgwu8@nakagawatakeshiyanoMacBook-Pro git_challenge % echo こんにちは、世界！ >> hello_world.txt
+nkgwu8@nakagawatakeshiyanoMacBook-Pro git_challenge % git add hello_world.txt
+nkgwu8@nakagawatakeshiyanoMacBook-Pro git_challenge % git commit -m "日本語訳を追加"
+[main 198c235] 日本語訳を追加
+ 1 file changed, 1 insertion(+)
+nkgwu8@nakagawatakeshiyanoMacBook-Pro git_challenge % git log --oneline
+198c235 (HEAD -> main) 日本語訳を追加
+1f4ca04 hello_world.txtを追加
+
